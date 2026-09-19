@@ -1,0 +1,11 @@
+<!doctype html>
+<title>FUERTE MIND — TikTok Login</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body style="font-family:system-ui,sans-serif; max-width:500px; margin:4rem auto; padding:0 1.25rem; line-height:1.6;">
+<h1>Authorization received</h1>
+<p>Copy the value below and paste it back where FUERTE MIND's setup asked for it, then you can close this tab.</p>
+<pre id="out" style="background:#f2f2f2; padding:1rem; border-radius:8px; white-space:pre-wrap; word-break:break-all;"></pre>
+<script>
+  document.getElementById('out').textContent = window.location.search || '(no parameters found in URL)';
+</script>
