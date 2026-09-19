@@ -1,0 +1,281 @@
+<!doctype html>
+<title>FUERTE MIND Privacy Policy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF7ED;
+    --surface:#FFFFFF;
+    --ink:#1B1710;
+    --ink-soft:#6B6153;
+    --accent:#D65A26;
+    --border:#E3D9C4;
+    --flame:#D65A26;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#151009;
+      --surface:#1D1610;
+      --ink:#F5EAD0;
+      --ink-soft:#B8AC94;
+      --accent:#F0824D;
+      --border:#33291D;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#151009;
+    --surface:#1D1610;
+    --ink:#F5EAD0;
+    --ink-soft:#B8AC94;
+    --accent:#F0824D;
+    --border:#33291D;
+    color-scheme: dark;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+
+  .topbar{
+    position:sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index:5;
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    padding:.9rem 1.25rem;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom:1px solid var(--border);
+  }
+  .flame{width:20px; height:20px; flex:none;}
+  .brand{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:1.02rem;
+    letter-spacing:.01em;
+  }
+  .brand small{
+    display:block;
+    font-family:'Inter',sans-serif;
+    font-weight:500;
+    font-size:.68rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-top:1px;
+  }
+
+  main{
+    max-width:700px;
+    margin:0 auto;
+    padding:2.5rem 1.25rem 5rem;
+  }
+
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:700;
+    font-size:clamp(2rem,6vw,2.7rem);
+    line-height:1.08;
+    margin:.4rem 0 .3rem;
+    text-wrap:balance;
+  }
+  .updated{
+    color:var(--ink-soft);
+    font-size:.85rem;
+    margin-bottom:2.2rem;
+  }
+  .intro{
+    font-size:1.05rem;
+    color:var(--ink-soft);
+    max-width:56ch;
+    margin-bottom:2.4rem;
+  }
+
+  nav.toc{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:1.1rem 1.3rem;
+    margin-bottom:2.8rem;
+  }
+  nav.toc p{
+    margin:0 0 .6rem;
+    font-size:.72rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    font-weight:600;
+  }
+  nav.toc ol{
+    margin:0;
+    padding-left:1.1rem;
+    columns:2;
+    column-gap:1.5rem;
+  }
+  nav.toc li{margin-bottom:.4rem; font-size:.92rem;}
+  nav.toc a{text-decoration:none;}
+  nav.toc a:hover{text-decoration:underline;}
+
+  section{
+    padding-top:1.6rem;
+    margin-top:1.6rem;
+    border-top:1px solid var(--border);
+    scroll-margin-top:5rem;
+  }
+  section:first-of-type{border-top:none; margin-top:0;}
+
+  h2{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:1.35rem;
+    margin:0 0 .7rem;
+    display:flex;
+    align-items:baseline;
+    gap:.55rem;
+  }
+  h2 .num{
+    font-variant-numeric:tabular-nums;
+    color:var(--accent);
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:.85rem;
+  }
+  p{margin:0 0 1rem; max-width:62ch;}
+  ul{margin:0 0 1rem; padding-left:1.3rem;}
+  li{margin-bottom:.4rem; max-width:60ch;}
+  strong{font-weight:600;}
+
+  .callout{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-left:3px solid var(--accent);
+    border-radius:8px;
+    padding:1rem 1.2rem;
+    font-size:.92rem;
+    color:var(--ink-soft);
+    margin:1.4rem 0;
+  }
+
+  footer{
+    max-width:700px;
+    margin:0 auto;
+    padding:0 1.25rem 3rem;
+    color:var(--ink-soft);
+    font-size:.85rem;
+  }
+  footer a{color:var(--ink-soft); text-decoration:underline;}
+
+  @media (max-width:480px){
+    nav.toc ol{columns:1;}
+  }
+</style>
+
+<div class="topbar">
+  <svg class="flame" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 2C12 2 8 6.5 8 10.5C8 12.5 9 13.5 9 13.5C9 13.5 7 12.5 7 10C4.5 12.5 4 15.5 4 17C4 20.5 7.5 22 12 22C16.5 22 20 20.5 20 17C20 13.5 17 11 16 9C16 11.5 14.5 12.5 14.5 12.5C15 10.5 14.5 8 12 2Z" fill="var(--accent)"/>
+  </svg>
+  <div class="brand">FUERTE MIND<small>Privacy Policy</small></div>
+</div>
+
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: September 19, 2026</p>
+  <p class="intro">FUERTE MIND ("we," "us," "our") sells apparel through our storefront on Etsy, produced on demand through Printify. This page explains what information passes through those platforms when you shop with us or interact with our content, and how we handle it.</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#info-we-see">1. Information we see</a></li>
+      <li><a href="#how-used">2. How it's used</a></li>
+      <li><a href="#third-parties">3. Third parties involved</a></li>
+      <li><a href="#cookies">4. Cookies &amp; tracking</a></li>
+      <li><a href="#retention">5. Data retention</a></li>
+      <li><a href="#rights">6. Your rights</a></li>
+      <li><a href="#children">7. Children's privacy</a></li>
+      <li><a href="#changes">8. Changes to this policy</a></li>
+      <li><a href="#contact">9. Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="info-we-see">
+    <h2><span class="num">01</span> Information we see</h2>
+    <p>All purchases are processed through Etsy's checkout, not a website we operate ourselves. When you buy from FUERTE MIND on Etsy, Etsy shares with us the order details needed to fulfill it:</p>
+    <ul>
+      <li>Name and shipping address</li>
+      <li>Order contents, size/color selections, and order total</li>
+      <li>Email address, for order-related communication through Etsy's messaging system</li>
+    </ul>
+    <p>We do not collect payment card details — Etsy and its payment processors handle that directly and never share full card numbers with us.</p>
+  </section>
+
+  <section id="how-used">
+    <h2><span class="num">02</span> How it's used</h2>
+    <p>We use order information only to:</p>
+    <ul>
+      <li>Send your order to Printify for printing and shipping</li>
+      <li>Respond to questions about an order</li>
+      <li>Track basic sales and demand for our own designs</li>
+    </ul>
+    <p>We do not sell your information, and we do not use it for advertising outside of the platforms (Etsy, TikTok) where you already interact with us.</p>
+  </section>
+
+  <section id="third-parties">
+    <h2><span class="num">03</span> Third parties involved</h2>
+    <p>Because FUERTE MIND runs on third-party platforms rather than our own storefront, several companies process parts of your data independently, under their own privacy policies:</p>
+    <ul>
+      <li><strong>Etsy</strong> — marketplace, checkout, payments, and buyer/seller messaging</li>
+      <li><strong>Printify</strong> — order fulfillment, printing, and shipping of physical products</li>
+      <li><strong>TikTok</strong> — if you follow, comment on, or message us on TikTok, that interaction is governed by TikTok's own privacy policy</li>
+    </ul>
+    <p>We encourage you to review each platform's policy for details on how they specifically handle your data.</p>
+  </section>
+
+  <section id="cookies">
+    <h2><span class="num">04</span> Cookies &amp; tracking</h2>
+    <p>FUERTE MIND does not operate its own website with tracking cookies. Any cookies or analytics you encounter while browsing our Etsy shop or TikTok profile belong to those platforms, not to us.</p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">05</span> Data retention</h2>
+    <p>We keep order records for as long as needed for accounting, warranty, and customer-service purposes, and no longer than the platforms we use (Etsy, Printify) retain the same records on their end.</p>
+  </section>
+
+  <section id="rights">
+    <h2><span class="num">06</span> Your rights</h2>
+    <p>You can ask us to tell you what order information we hold about you, or to delete it once an order is complete and no longer needed for legal or accounting purposes. Reach out using the contact info below. For data held directly by Etsy, Printify, or TikTok, you may also need to contact them directly.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">07</span> Children's privacy</h2>
+    <p>FUERTE MIND's products and content are intended for adults. We do not knowingly collect information from children under 13.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">08</span> Changes to this policy</h2>
+    <p>If this policy changes, we'll update the "last updated" date at the top of this page. Continued use of our shop or social channels after a change means you accept the update.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">09</span> Contact</h2>
+    <p>Questions about this policy or a request about your data? Reach us through our Etsy shop messages, or through our TikTok profile.</p>
+    <div class="callout">This is a plain-language policy for a small, independent shop. If you need this reviewed for a specific legal jurisdiction, a lawyer familiar with e-commerce and platforms like Etsy and TikTok can tailor it further.</div>
+  </section>
+</main>
+
+<footer>
+  FUERTE MIND — apparel designed to remind you that you rose from the fire stronger.
+</footer>

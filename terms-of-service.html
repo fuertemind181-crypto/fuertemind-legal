@@ -1,0 +1,272 @@
+<!doctype html>
+<title>FUERTE MIND Terms of Service</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF7ED;
+    --surface:#FFFFFF;
+    --ink:#1B1710;
+    --ink-soft:#6B6153;
+    --accent:#D65A26;
+    --border:#E3D9C4;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#151009;
+      --surface:#1D1610;
+      --ink:#F5EAD0;
+      --ink-soft:#B8AC94;
+      --accent:#F0824D;
+      --border:#33291D;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#151009;
+    --surface:#1D1610;
+    --ink:#F5EAD0;
+    --ink-soft:#B8AC94;
+    --accent:#F0824D;
+    --border:#33291D;
+    color-scheme: dark;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+
+  .topbar{
+    position:sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index:5;
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    padding:.9rem 1.25rem;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom:1px solid var(--border);
+  }
+  .flame{width:20px; height:20px; flex:none;}
+  .brand{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:1.02rem;
+    letter-spacing:.01em;
+  }
+  .brand small{
+    display:block;
+    font-family:'Inter',sans-serif;
+    font-weight:500;
+    font-size:.68rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-top:1px;
+  }
+
+  main{
+    max-width:700px;
+    margin:0 auto;
+    padding:2.5rem 1.25rem 5rem;
+  }
+
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:700;
+    font-size:clamp(2rem,6vw,2.7rem);
+    line-height:1.08;
+    margin:.4rem 0 .3rem;
+    text-wrap:balance;
+  }
+  .updated{
+    color:var(--ink-soft);
+    font-size:.85rem;
+    margin-bottom:2.2rem;
+  }
+  .intro{
+    font-size:1.05rem;
+    color:var(--ink-soft);
+    max-width:56ch;
+    margin-bottom:2.4rem;
+  }
+
+  nav.toc{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:1.1rem 1.3rem;
+    margin-bottom:2.8rem;
+  }
+  nav.toc p{
+    margin:0 0 .6rem;
+    font-size:.72rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    font-weight:600;
+  }
+  nav.toc ol{
+    margin:0;
+    padding-left:1.1rem;
+    columns:2;
+    column-gap:1.5rem;
+  }
+  nav.toc li{margin-bottom:.4rem; font-size:.92rem;}
+  nav.toc a{text-decoration:none;}
+  nav.toc a:hover{text-decoration:underline;}
+
+  section{
+    padding-top:1.6rem;
+    margin-top:1.6rem;
+    border-top:1px solid var(--border);
+    scroll-margin-top:5rem;
+  }
+  section:first-of-type{border-top:none; margin-top:0;}
+
+  h2{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:1.35rem;
+    margin:0 0 .7rem;
+    display:flex;
+    align-items:baseline;
+    gap:.55rem;
+  }
+  h2 .num{
+    font-variant-numeric:tabular-nums;
+    color:var(--accent);
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:.85rem;
+  }
+  p{margin:0 0 1rem; max-width:62ch;}
+  ul{margin:0 0 1rem; padding-left:1.3rem;}
+  li{margin-bottom:.4rem; max-width:60ch;}
+  strong{font-weight:600;}
+
+  .callout{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-left:3px solid var(--accent);
+    border-radius:8px;
+    padding:1rem 1.2rem;
+    font-size:.92rem;
+    color:var(--ink-soft);
+    margin:1.4rem 0;
+  }
+
+  footer{
+    max-width:700px;
+    margin:0 auto;
+    padding:0 1.25rem 3rem;
+    color:var(--ink-soft);
+    font-size:.85rem;
+  }
+
+  @media (max-width:480px){
+    nav.toc ol{columns:1;}
+  }
+</style>
+
+<div class="topbar">
+  <svg class="flame" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M12 2C12 2 8 6.5 8 10.5C8 12.5 9 13.5 9 13.5C9 13.5 7 12.5 7 10C4.5 12.5 4 15.5 4 17C4 20.5 7.5 22 12 22C16.5 22 20 20.5 20 17C20 13.5 17 11 16 9C16 11.5 14.5 12.5 14.5 12.5C15 10.5 14.5 8 12 2Z" fill="var(--accent)"/>
+  </svg>
+  <div class="brand">FUERTE MIND<small>Terms of Service</small></div>
+</div>
+
+<main>
+  <h1>Terms of Service</h1>
+  <p class="updated">Last updated: September 19, 2026</p>
+  <p class="intro">These terms cover your use of FUERTE MIND's Etsy shop, printed products, and social channels (including TikTok). By buying from us or following our content, you agree to the terms below.</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#about">1. About FUERTE MIND</a></li>
+      <li><a href="#purchases">2. Purchases &amp; Etsy</a></li>
+      <li><a href="#fulfillment">3. Production &amp; shipping</a></li>
+      <li><a href="#returns">4. Returns &amp; exchanges</a></li>
+      <li><a href="#ip">5. Designs &amp; intellectual property</a></li>
+      <li><a href="#conduct">6. Social channels &amp; conduct</a></li>
+      <li><a href="#liability">7. Limitation of liability</a></li>
+      <li><a href="#law">8. Governing terms</a></li>
+      <li><a href="#changes">9. Changes to these terms</a></li>
+      <li><a href="#contact">10. Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="about">
+    <h2><span class="num">01</span> About FUERTE MIND</h2>
+    <p>FUERTE MIND is an independent apparel brand. We design graphic tees around themes of resilience and strength, and sell them exclusively through our Etsy shop. Products are printed on demand — nothing is warehoused ahead of time.</p>
+  </section>
+
+  <section id="purchases">
+    <h2><span class="num">02</span> Purchases &amp; Etsy</h2>
+    <p>Every purchase happens through Etsy's checkout, so Etsy's own <a href="https://www.etsy.com/legal/terms" target="_blank" rel="noopener">Terms of Use</a> apply to the transaction itself — payment processing, buyer protection, and dispute resolution are handled by Etsy, not by us directly.</p>
+  </section>
+
+  <section id="fulfillment">
+    <h2><span class="num">03</span> Production &amp; shipping</h2>
+    <p>Orders are produced and shipped by Printify's print-on-demand network. This means:</p>
+    <ul>
+      <li>Production typically takes a few business days before an order ships — exact timing is shown on each Etsy listing</li>
+      <li>Shipping times vary by destination and are estimates, not guarantees</li>
+      <li>Colors may vary slightly from what's shown on screen due to printing and fabric differences</li>
+    </ul>
+  </section>
+
+  <section id="returns">
+    <h2><span class="num">04</span> Returns &amp; exchanges</h2>
+    <p>Because each item is printed specifically for your order, we generally don't accept returns for a simple change of mind. If your item arrives damaged, misprinted, or in the wrong size due to our error, contact us through Etsy messages within 30 days of delivery and we'll make it right with a reprint or refund.</p>
+  </section>
+
+  <section id="ip">
+    <h2><span class="num">05</span> Designs &amp; intellectual property</h2>
+    <p>All FUERTE MIND designs, artwork, and the FUERTE MIND name and logo are our property. Buying a shirt gives you the shirt — it doesn't give you the right to reproduce, resell, or repurpose the design itself.</p>
+  </section>
+
+  <section id="conduct">
+    <h2><span class="num">06</span> Social channels &amp; conduct</h2>
+    <p>If you interact with FUERTE MIND on TikTok or other social platforms — commenting, messaging, sharing — please keep it respectful. We reserve the right to remove comments or block accounts that are abusive, spammy, or otherwise violate that platform's own community guidelines.</p>
+  </section>
+
+  <section id="liability">
+    <h2><span class="num">07</span> Limitation of liability</h2>
+    <p>FUERTE MIND is a small, independent shop. To the extent allowed by law, we're not liable for indirect or incidental damages arising from the use of our products or content. Our responsibility for any order is limited to the value of that order.</p>
+  </section>
+
+  <section id="law">
+    <h2><span class="num">08</span> Governing terms</h2>
+    <p>These terms are meant to be read alongside Etsy's and Printify's own terms, which govern the parts of the transaction they each handle.</p>
+    <div class="callout">This is a plain-language terms page for a small, independent shop. If you need it reviewed for a specific jurisdiction or scaled into a larger operation, a lawyer familiar with e-commerce can tailor it further.</div>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">09</span> Changes to these terms</h2>
+    <p>We may update these terms as the shop grows. The "last updated" date at the top will always reflect the latest version.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">10</span> Contact</h2>
+    <p>Questions about these terms? Reach us through our Etsy shop messages or our TikTok profile.</p>
+  </section>
+</main>
+
+<footer>
+  FUERTE MIND — apparel designed to remind you that you rose from the fire stronger.
+</footer>
